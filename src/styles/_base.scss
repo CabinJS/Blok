@@ -39,6 +39,11 @@ body {
   }
 }
 
+// Remove FF abbr border
+abbr {
+  border-bottom-width: 0;
+}
+
 ul {
   list-style: none;
   padding: 0;
