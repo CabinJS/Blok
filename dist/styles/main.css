@@ -78,31 +78,36 @@ body {
   }
 }
 
-/* line 42, ../../src/styles/_base.scss */
+/* line 43, ../../src/styles/_base.scss */
+abbr {
+  border-bottom-width: 0;
+}
+
+/* line 47, ../../src/styles/_base.scss */
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 48, ../../src/styles/_base.scss */
+/* line 53, ../../src/styles/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 52, ../../src/styles/_base.scss */
+/* line 57, ../../src/styles/_base.scss */
 h2 {
   font-size: 1.5em;
   line-height: 1.7em;
 }
 
-/* line 57, ../../src/styles/_base.scss */
+/* line 62, ../../src/styles/_base.scss */
 a {
   color: #393838;
   text-decoration: none;
 }
 
-/* line 62, ../../src/styles/_base.scss */
+/* line 67, ../../src/styles/_base.scss */
 .content {
   position: relative;
   margin: 33px auto 0;
@@ -110,28 +115,28 @@ a {
   width: 55%;
 }
 @media (max-width: 1250px) {
-  /* line 62, ../../src/styles/_base.scss */
+  /* line 67, ../../src/styles/_base.scss */
   .content {
     width: 94%;
   }
 }
 @media (max-width: 630px) {
-  /* line 62, ../../src/styles/_base.scss */
+  /* line 67, ../../src/styles/_base.scss */
   .content {
     margin: 0 auto 10px;
     width: 100%;
   }
 }
-/* line 77, ../../src/styles/_base.scss */
+/* line 82, ../../src/styles/_base.scss */
 .content a:hover {
   text-decoration: underline;
 }
 
-/* line 82, ../../src/styles/_base.scss */
+/* line 87, ../../src/styles/_base.scss */
 .pagination {
   height: 40px;
 }
-/* line 85, ../../src/styles/_base.scss */
+/* line 90, ../../src/styles/_base.scss */
 .pagination li {
   float: left;
   padding: 10px;
@@ -141,19 +146,19 @@ a {
   box-shadow: 5px 5px #e6e6e6;
 }
 
-/* line 92, ../../src/styles/_base.scss */
+/* line 97, ../../src/styles/_base.scss */
 .older {
   position: absolute;
   left: 0;
 }
 
-/* line 97, ../../src/styles/_base.scss */
+/* line 102, ../../src/styles/_base.scss */
 .newer {
   position: absolute;
   right: 0;
 }
 
-/* line 102, ../../src/styles/_base.scss */
+/* line 107, ../../src/styles/_base.scss */
 .cabin {
   position: fixed;
   right: .5em;
@@ -161,18 +166,18 @@ a {
   width: 1.6em;
   opacity: .2;
 }
-/* line 109, ../../src/styles/_base.scss */
+/* line 114, ../../src/styles/_base.scss */
 .cabin:hover {
   opacity: .4;
 }
 @media (max-width: 1250px) {
-  /* line 102, ../../src/styles/_base.scss */
+  /* line 107, ../../src/styles/_base.scss */
   .cabin {
     display: none;
   }
 }
 
-/* line 119, ../../src/styles/_base.scss */
+/* line 124, ../../src/styles/_base.scss */
 .group:after {
   content: "";
   display: table;
