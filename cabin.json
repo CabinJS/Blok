@@ -13,7 +13,7 @@
       "src": "posts",
       "dest": "dist",
       "layout": "src/layouts/post.<%= templateLang %>",
-      "url": "blog/posts/:title",
+      "url": ":title",
       "options": {
         "pagination": {
           "postsPerPage": 1,
