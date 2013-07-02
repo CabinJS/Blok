@@ -1,0 +1,128 @@
+$green: hsl(151, 65%, 60%);
+$offBlack: hsl(10, 1%, 22%);
+
+$codeFont: Monaco, Consolas, monospace;
+$postFont: 'Merriweather', serif;
+$headerFont: 'Open Sans', sans-serif;
+
+$mainTheme: $green;
+$mainFont: $offBlack;
+
+@mixin breakpoint($point) {
+  @if $point == big-phone {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == small-phone {
+    @media (max-width: 630px)  { @content; }
+  }
+}
+
+@mixin shadow($color) {
+  background: $color;
+  @include box-shadow( 5px 5px desaturate(darken($color, 10), 20));
+}
+
+body {
+  margin: 0 0 33px;
+  color: $mainFont;
+  background: hsl(0, 0%, 94%);
+  -webkit-font-smoothing: antialiased;
+  font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+  font-size: 18px;
+
+  @include breakpoint(big-phone) {
+    font-size: 16px;
+  }
+
+  @include breakpoint(small-phone) {
+    font-size: 12px;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.7em;
+}
+
+a {
+  color: $mainFont;
+  text-decoration: none;
+}
+
+.content {
+  position: relative;
+  margin: 33px auto 0;
+  max-width: 650px;
+  width: 55%;
+
+  @include breakpoint(big-phone) {
+    width: 94%;
+  }
+
+  @include breakpoint(small-phone) {
+    margin: 0 auto 10px;
+    width: 100%;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.pagination {
+  height: 40px;
+
+  li {
+    float: left;
+    padding: 10px;
+    @include shadow(hsl(0, 0%, 100%));
+  }
+}
+
+.older {
+  position: absolute;
+  left: 0;
+}
+
+.newer {
+  position: absolute;
+  right: 0;
+}
+
+.cabin {
+  position: fixed;
+  right: .5em;
+  bottom: .5em;
+  width: 1.6em;
+  opacity: .2;
+
+  &:hover {
+    opacity: .4;
+  }
+
+  @include breakpoint(big-phone) {
+    display: none;
+  }
+}
+
+@mixin clearfix {
+  &:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+}
+
+.group {
+  @include clearfix;
+}

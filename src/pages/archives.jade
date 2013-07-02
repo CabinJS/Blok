@@ -1,0 +1,7 @@
+extends ../layouts/base
+block nav
+  mixin nav('archives')
+block content
+  each post in posts
+    .archive-post.group
+      mixin postHead(post)

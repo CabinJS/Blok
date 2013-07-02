@@ -1,0 +1,83 @@
+.nav {
+  position:fixed;
+  z-index: 100;
+  width: 275px;
+  right: -105px;
+  top: 0;
+
+  a {
+    padding: 14px;
+    display: block;
+  }
+
+  li {
+    margin: 0;
+    @include transition( all 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000));
+
+    @include breakpoint(big-phone) {
+      @include transition( all 400ms cubic-bezier(0.420, 0.000, 0.580, 1.000));
+    }
+  }
+
+  .active {
+    margin-left: -45px;
+
+    &:hover {
+      margin-left: -45px;
+    }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+.nav .nav-link {
+  position: relative;
+  z-index:90;
+  width:245px;
+
+  &:hover {
+    margin-left: -45px;
+  }
+
+  @include breakpoint(big-phone) {
+    margin-left: 180px;
+
+    &.nav-show{
+      margin-left: 40px;
+
+      &.active {
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
+.menu {
+  width: 140px;
+  padding: 5px;
+  display: none;
+  position: absolute;
+  right:0;
+  color: white;
+  font-size: 1.4em;
+  @include shadow(hsl(0, 0%, 40%));
+
+  @include breakpoint(big-phone) {
+    display: block;
+  }
+}
+
+.pink   { @include shadow(#ff6b77); }
+.green  { @include shadow(#1fda9a); }
+.blue   { @include shadow(hsl(216, 100%, 71%)); }
+.yellow { @include shadow(orange);    }
+
+.name {
+  font-weight: normal;
+  font-size: 1.2em;
+  margin: 0;
+}
