@@ -15,10 +15,10 @@ block content
         - var page = pages[j];
         - if (j === currentIndex - 1) {
         li.newer
-          a(href="#{page.url}") Newer →
+          a(href="/Blok#{page.url}") Newer &#8594;
         - } else if (j === currentIndex + 1) {
           li.older
-            a.active-page(href="#{page.url}") ← Older
+            a.active-page(href="/Blok#{page.url}") &#8592; Older
         - }
       - }
     - }
