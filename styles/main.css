@@ -93,21 +93,22 @@ ul {
 /* line 53, ../../src/styles/_base.scss */
 img {
   max-width: 100%;
+  border-width: 0;
 }
 
-/* line 57, ../../src/styles/_base.scss */
+/* line 58, ../../src/styles/_base.scss */
 h2 {
   font-size: 1.5em;
   line-height: 1.7em;
 }
 
-/* line 62, ../../src/styles/_base.scss */
+/* line 63, ../../src/styles/_base.scss */
 a {
   color: #393838;
   text-decoration: none;
 }
 
-/* line 67, ../../src/styles/_base.scss */
+/* line 68, ../../src/styles/_base.scss */
 .content {
   position: relative;
   margin: 33px auto 0;
@@ -115,28 +116,28 @@ a {
   width: 55%;
 }
 @media (max-width: 1250px) {
-  /* line 67, ../../src/styles/_base.scss */
+  /* line 68, ../../src/styles/_base.scss */
   .content {
     width: 94%;
   }
 }
 @media (max-width: 630px) {
-  /* line 67, ../../src/styles/_base.scss */
+  /* line 68, ../../src/styles/_base.scss */
   .content {
     margin: 0 auto 10px;
     width: 100%;
   }
 }
-/* line 82, ../../src/styles/_base.scss */
+/* line 83, ../../src/styles/_base.scss */
 .content a:hover {
   text-decoration: underline;
 }
 
-/* line 87, ../../src/styles/_base.scss */
+/* line 88, ../../src/styles/_base.scss */
 .pagination {
   height: 40px;
 }
-/* line 90, ../../src/styles/_base.scss */
+/* line 91, ../../src/styles/_base.scss */
 .pagination li {
   float: left;
   padding: 10px;
@@ -146,19 +147,19 @@ a {
   box-shadow: 5px 5px #e6e6e6;
 }
 
-/* line 97, ../../src/styles/_base.scss */
+/* line 98, ../../src/styles/_base.scss */
 .older {
   position: absolute;
   left: 0;
 }
 
-/* line 102, ../../src/styles/_base.scss */
+/* line 103, ../../src/styles/_base.scss */
 .newer {
   position: absolute;
   right: 0;
 }
 
-/* line 107, ../../src/styles/_base.scss */
+/* line 108, ../../src/styles/_base.scss */
 .cabin {
   position: fixed;
   right: .5em;
@@ -166,18 +167,18 @@ a {
   width: 1.6em;
   opacity: .2;
 }
-/* line 114, ../../src/styles/_base.scss */
+/* line 115, ../../src/styles/_base.scss */
 .cabin:hover {
   opacity: .4;
 }
 @media (max-width: 1250px) {
-  /* line 107, ../../src/styles/_base.scss */
+  /* line 108, ../../src/styles/_base.scss */
   .cabin {
     display: none;
   }
 }
 
-/* line 124, ../../src/styles/_base.scss */
+/* line 125, ../../src/styles/_base.scss */
 .group:after {
   content: "";
   display: table;
