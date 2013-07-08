@@ -6,20 +6,18 @@ block content
     .post
       mixin post(post)
   ul.pagination.group
-    - if (pages.length > 1) {
-      - for (var i = 0; i < pages.length; i++) {
-      -   if (pages[i].currentPage) var currentIndex = i;
-      - }
+    - for (var i = 0; i < pages.length; i++) {
+    -   if (pages[i].currentPage) var currentIndex = i;
+    - }
 
-      - for (var j = 0; j < pages.length; j++) {
-        - var page = pages[j];
-        - if (j === currentIndex - 1) {
+    - for (var j = 0; j < pages.length; j++) {
+      - var page = pages[j];
+      - if (j === currentIndex - 1) {
         li.newer
           a(href="#{page.url}") Newer &#8594;
-        - } else if (j === currentIndex + 1) {
-          li.older
-            a.active-page(href="#{page.url}") &#8592; Older
-        - }
+      - } else if (j === currentIndex + 1) {
+        li.older
+          a.active-page(href="#{page.url}") &#8592; Older
       - }
     - }
 
