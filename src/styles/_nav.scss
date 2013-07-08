@@ -45,9 +45,11 @@
 
   @include breakpoint(big-phone) {
     margin-left: 180px;
+    display: none;
 
     &.nav-show{
       margin-left: 40px;
+      display: block;
 
       &.active {
         margin-left: 0px;
