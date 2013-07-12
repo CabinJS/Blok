@@ -13,11 +13,11 @@ mixin post(post)
 mixin nav(current)
   ul.nav.group
     li.icon-menu.menu
-    li.nav-link.pink(class= current === "index" ? "active" : "")
+    li.nav-link.red(class= current === "index" ? "active" : "")
       a.name(href="/") My Name
     li.nav-link.sub-item.blue(class= current === "about" ? "active" : "")
       a(href="/about.html") about
-    li.nav-link.sub-item.yellow(class= current === "projects" ? "active" : "")
+    li.nav-link.sub-item.orange(class= current === "projects" ? "active" : "")
       a(href="/projects.html") projects
     li.nav-link.sub-item.green(class= current === "archives" ? "active" : "")
       a(href="/archives.html") archives
