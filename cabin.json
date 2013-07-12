@@ -16,7 +16,7 @@
       "url": ":title",
       "options": {
         "pagination": {
-          "postsPerPage": 1,
+          "postsPerPage": 2,
           "listPage": "src/pages/index.<%= templateLang %>"
         }
       }
