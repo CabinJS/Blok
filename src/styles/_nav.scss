@@ -73,10 +73,10 @@
   }
 }
 
-.pink   { @include shadow(#ff6b77); }
-.green  { @include shadow(#1fda9a); }
-.blue   { @include shadow(hsl(216, 100%, 71%)); }
-.yellow { @include shadow(orange);    }
+.red    { @include shadow($red); }
+.green  { @include shadow($green); }
+.blue   { @include shadow($blue); }
+.orange { @include shadow($orange); }
 
 .name {
   font-weight: normal;

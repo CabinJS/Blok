@@ -32,9 +32,18 @@
   margin-bottom: 1.2em;
   line-height: 1.65em;
   font-size: 1em;
-  p a {
-    color: hsl(210, 63%, 58%);
+
+  a {
+    color: hsl(210, 73%, 48%);
   }
+
+  .anchor {
+    color: $offBlack;
+  }
+}
+
+.comments {
+  color: hsl(210, 73%, 48%);
 }
 
 p code {

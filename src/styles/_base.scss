@@ -1,12 +1,15 @@
-$green: hsl(151, 65%, 60%);
+$red:      hsl(355, 100%, 71%);
+$blue:     hsl(216, 100%, 71%);
+$green:    hsl(159, 75%, 49%);
+$orange:   hsl(39, 100%, 50%);
+$blueGrey: hsl(210, 73%, 48%);
 $offBlack: hsl(10, 1%, 22%);
 
 $codeFont: Monaco, Consolas, monospace;
-$postFont: 'Merriweather', serif;
-$headerFont: 'Open Sans', sans-serif;
+$mainFont: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-$mainTheme: $green;
-$mainFont: $offBlack;
+$baseTextColor: $offBlack;
+$linkColor: $blueGrey;
 
 @mixin breakpoint($point) {
   @if $point == big-phone {
@@ -24,10 +27,10 @@ $mainFont: $offBlack;
 
 body {
   margin: 0 0 33px;
-  color: $mainFont;
+  color: $baseTextColor;
   background: hsl(0, 0%, 94%);
   -webkit-font-smoothing: antialiased;
-  font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+  font-family: $mainFont;
   font-size: 18px;
 
   @include breakpoint(big-phone) {
@@ -61,7 +64,7 @@ h2 {
 }
 
 a {
-  color: $mainFont;
+  color: $baseTextColor;
   text-decoration: none;
 }
 
