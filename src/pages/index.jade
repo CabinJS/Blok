@@ -5,8 +5,10 @@ block content
   each post in posts
     .post
       mixin post(post)
-      h2
-        a(href="/#{post.url}#comments").comments View comments
+      div.comments
+        a(href="/#{post.url}#comments")
+          span.icon-bubbles
+          | Comments
   ul.pagination.group
     - for (var i = 0; i < pages.length; i++) {
     -   if (pages[i].currentPage) var currentIndex = i;
