@@ -5,6 +5,7 @@
   "template": [
     "Jade"
   ],
+  "gruntPagesVersion": "0.2.5",
   "gruntPages": {
     "options": {
       "pageSrc": "src/pages"
