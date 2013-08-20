@@ -8,7 +8,10 @@
   "gruntPagesVersion": "0.4.1",
   "gruntPages": {
     "options": {
-      "pageSrc": "src/pages"
+      "pageSrc": "src/pages",
+      "data": {
+        "baseUrl": "/"
+      }
     },
     "posts": {
       "src": "posts",
