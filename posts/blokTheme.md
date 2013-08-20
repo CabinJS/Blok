@@ -5,6 +5,8 @@ date:   2013-07-2
 
 Blok is a blogging theme for Cabin. To use this theme check out the [Getting Started](http://colinwren.github.io/Cabin/) section of the Cabin website.
 
+Check out the [Blok GitHub repository](https://github.com/colinwren/Blok) for more information.
+
 ## Markdown
 Cabin supports [GitHub flavored Markdown](https://help.github.com/articles/github-flavored-markdown) for its static site generation. It has awesome features like:
 
