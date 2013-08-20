@@ -1,6 +1,4 @@
 @import url(solarized-dark.syntax.css);
-/*Icon Set: IcoMoon - Free -- http://keyamoon.com/icomoon/*/
-/*License:  CC BY 3.0 -- http://creativecommons.org/licenses/by/3.0/*/
 @font-face {
   font-family: 'icomoon';
   src: url("fonts/icomoon.eot");
@@ -9,8 +7,27 @@
   font-style: normal;
 }
 
-/* line 14, ../../src/styles/_icons.scss */
-.icon-github, .icon-menu, .icon-dribbble, .icon-mail, .icon-google-plus, .icon-facebook, .icon-twitter, .icon-pinterest {
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+/* line 13, ../../src/styles/_icons.scss */
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+/* line 30, ../../src/styles/_icons.scss */
+.icon-bubbles, .icon-link {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -21,42 +38,17 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 24, ../../src/styles/_icons.scss */
-.icon-github:before {
-  content: "\e00b";
+/* line 40, ../../src/styles/_icons.scss */
+.icon-bubbles:before {
+  content: "\e002";
 }
 
-/* line 27, ../../src/styles/_icons.scss */
-.icon-menu:before {
-  content: "\e001";
-}
-
-/* line 30, ../../src/styles/_icons.scss */
-.icon-dribbble:before {
-  content: "\e000";
-}
-
-/* line 33, ../../src/styles/_icons.scss */
-.icon-google-plus:before {
-  content: "\e005";
-}
-
-/* line 36, ../../src/styles/_icons.scss */
-.icon-pinterest:before {
+/* line 43, ../../src/styles/_icons.scss */
+.icon-link:before {
   content: "\e003";
 }
 
-/* line 39, ../../src/styles/_icons.scss */
-.icon-facebook:before {
-  content: "\e007";
-}
-
-/* line 42, ../../src/styles/_icons.scss */
-.icon-twitter:before {
-  content: "\e00c";
-}
-
-/* line 25, ../../src/styles/_base.scss */
+/* line 30, ../../src/styles/_base.scss */
 body {
   margin: 0 0 33px;
   color: #393838;
@@ -66,78 +58,78 @@ body {
   font-size: 18px;
 }
 @media (max-width: 1250px) {
-  /* line 25, ../../src/styles/_base.scss */
+  /* line 30, ../../src/styles/_base.scss */
   body {
     font-size: 16px;
   }
 }
 @media (max-width: 630px) {
-  /* line 25, ../../src/styles/_base.scss */
+  /* line 30, ../../src/styles/_base.scss */
   body {
     font-size: 12px;
   }
 }
 
-/* line 43, ../../src/styles/_base.scss */
+/* line 48, ../../src/styles/_base.scss */
 abbr {
   border-bottom-width: 0;
 }
 
-/* line 47, ../../src/styles/_base.scss */
+/* line 52, ../../src/styles/_base.scss */
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 53, ../../src/styles/_base.scss */
+/* line 58, ../../src/styles/_base.scss */
 img {
   max-width: 100%;
   border-width: 0;
 }
 
-/* line 58, ../../src/styles/_base.scss */
+/* line 63, ../../src/styles/_base.scss */
 h2 {
   font-size: 1.5em;
   line-height: 1.7em;
 }
 
-/* line 63, ../../src/styles/_base.scss */
+/* line 68, ../../src/styles/_base.scss */
 a {
   color: #393838;
   text-decoration: none;
 }
 
-/* line 68, ../../src/styles/_base.scss */
+/* line 73, ../../src/styles/_base.scss */
 .content {
   position: relative;
   margin: 33px auto 0;
-  max-width: 650px;
+  max-width: 700px;
   width: 55%;
 }
 @media (max-width: 1250px) {
-  /* line 68, ../../src/styles/_base.scss */
+  /* line 73, ../../src/styles/_base.scss */
   .content {
     width: 94%;
   }
 }
 @media (max-width: 630px) {
-  /* line 68, ../../src/styles/_base.scss */
+  /* line 73, ../../src/styles/_base.scss */
   .content {
     margin: 0 auto 10px;
     width: 100%;
   }
 }
-/* line 83, ../../src/styles/_base.scss */
+/* line 88, ../../src/styles/_base.scss */
 .content a:hover {
   text-decoration: underline;
 }
 
-/* line 88, ../../src/styles/_base.scss */
+/* line 93, ../../src/styles/_base.scss */
 .pagination {
   height: 40px;
 }
-/* line 91, ../../src/styles/_base.scss */
+/* line 96, ../../src/styles/_base.scss */
 .pagination li {
   float: left;
   padding: 10px;
@@ -147,19 +139,19 @@ a {
   box-shadow: 5px 5px #e6e6e6;
 }
 
-/* line 98, ../../src/styles/_base.scss */
+/* line 103, ../../src/styles/_base.scss */
 .older {
   position: absolute;
   left: 0;
 }
 
-/* line 103, ../../src/styles/_base.scss */
+/* line 108, ../../src/styles/_base.scss */
 .newer {
   position: absolute;
   right: 0;
 }
 
-/* line 108, ../../src/styles/_base.scss */
+/* line 113, ../../src/styles/_base.scss */
 .cabin {
   position: fixed;
   right: .5em;
@@ -167,18 +159,18 @@ a {
   width: 1.6em;
   opacity: .2;
 }
-/* line 115, ../../src/styles/_base.scss */
+/* line 120, ../../src/styles/_base.scss */
 .cabin:hover {
   opacity: .4;
 }
 @media (max-width: 1250px) {
-  /* line 108, ../../src/styles/_base.scss */
+  /* line 113, ../../src/styles/_base.scss */
   .cabin {
     display: none;
   }
 }
 
-/* line 125, ../../src/styles/_base.scss */
+/* line 130, ../../src/styles/_base.scss */
 .group:after {
   content: "";
   display: table;
@@ -244,18 +236,20 @@ a {
   /* line 37, ../../src/styles/_nav.scss */
   .nav .nav-link {
     margin-left: 180px;
+    display: none;
   }
-  /* line 49, ../../src/styles/_nav.scss */
+  /* line 50, ../../src/styles/_nav.scss */
   .nav .nav-link.nav-show {
     margin-left: 40px;
+    display: block;
   }
-  /* line 52, ../../src/styles/_nav.scss */
+  /* line 54, ../../src/styles/_nav.scss */
   .nav .nav-link.nav-show.active {
     margin-left: 0px;
   }
 }
 
-/* line 59, ../../src/styles/_nav.scss */
+/* line 61, ../../src/styles/_nav.scss */
 .menu {
   width: 140px;
   padding: 5px;
@@ -270,29 +264,29 @@ a {
   box-shadow: 5px 5px #4d4d4d;
 }
 @media (max-width: 1250px) {
-  /* line 59, ../../src/styles/_nav.scss */
+  /* line 61, ../../src/styles/_nav.scss */
   .menu {
     display: block;
   }
 }
 
-/* line 74, ../../src/styles/_nav.scss */
-.pink {
+/* line 76, ../../src/styles/_nav.scss */
+.red {
   background: #ff6b77;
   -webkit-box-shadow: 5px 5px #eb4c59;
   -moz-box-shadow: 5px 5px #eb4c59;
   box-shadow: 5px 5px #eb4c59;
 }
 
-/* line 75, ../../src/styles/_nav.scss */
+/* line 77, ../../src/styles/_nav.scss */
 .green {
-  background: #1fda9a;
-  -webkit-box-shadow: 5px 5px #2c9a74;
-  -moz-box-shadow: 5px 5px #2c9a74;
-  box-shadow: 5px 5px #2c9a74;
+  background: #1fdb99;
+  -webkit-box-shadow: 5px 5px #2d9a74;
+  -moz-box-shadow: 5px 5px #2d9a74;
+  box-shadow: 5px 5px #2d9a74;
 }
 
-/* line 76, ../../src/styles/_nav.scss */
+/* line 78, ../../src/styles/_nav.scss */
 .blue {
   background: #6ba6ff;
   -webkit-box-shadow: 5px 5px #4c8ceb;
@@ -300,15 +294,15 @@ a {
   box-shadow: 5px 5px #4c8ceb;
 }
 
-/* line 77, ../../src/styles/_nav.scss */
-.yellow {
-  background: orange;
+/* line 79, ../../src/styles/_nav.scss */
+.orange {
+  background: #ffa600;
   -webkit-box-shadow: 5px 5px #b87e14;
   -moz-box-shadow: 5px 5px #b87e14;
   box-shadow: 5px 5px #b87e14;
 }
 
-/* line 79, ../../src/styles/_nav.scss */
+/* line 81, ../../src/styles/_nav.scss */
 .name {
   font-weight: normal;
   font-size: 1.2em;
@@ -353,7 +347,7 @@ a {
 .post-date {
   margin: 0.2em 0;
   font-size: 1.4em;
-  opacity: 0.3;
+  color: rgba(57, 56, 56, 0.3);
 }
 
 /* line 31, ../../src/styles/_post.scss */
@@ -362,12 +356,43 @@ a {
   line-height: 1.65em;
   font-size: 1em;
 }
-/* line 35, ../../src/styles/_post.scss */
-.post-body p a {
-  color: #5094d7;
+/* line 36, ../../src/styles/_post.scss */
+.post-body a {
+  color: #4d91d5;
+}
+/* line 40, ../../src/styles/_post.scss */
+.post-body .anchor {
+  color: #393838;
 }
 
-/* line 40, ../../src/styles/_post.scss */
+/* line 45, ../../src/styles/_post.scss */
+.social {
+  padding: 0.55em 0 1.4em;
+}
+
+/* line 49, ../../src/styles/_post.scss */
+.comments {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+/* line 54, ../../src/styles/_post.scss */
+.comments a {
+  color: rgba(57, 56, 56, 0.3);
+}
+/* line 57, ../../src/styles/_post.scss */
+.comments a:hover {
+  text-decoration: none;
+  color: #4d91d5;
+  opacity: 1;
+}
+/* line 64, ../../src/styles/_post.scss */
+.comments .icon-bubbles {
+  padding: 3px 15px 5px 0;
+  float: left;
+}
+
+/* line 70, ../../src/styles/_post.scss */
 p code {
   background: #ebebff;
   border: 1px solid #e6e6e6;
@@ -379,7 +404,7 @@ p code {
   border-radius: 3px;
 }
 
-/* line 47, ../../src/styles/_post.scss */
+/* line 77, ../../src/styles/_post.scss */
 code {
   margin: 0;
   padding: 0;
@@ -388,14 +413,14 @@ code {
   font-family: Monaco, Consolas, monospace;
 }
 
-/* line 55, ../../src/styles/_post.scss */
+/* line 85, ../../src/styles/_post.scss */
 pre {
   font-family: Monaco, Consolas, monospace;
   overflow: auto;
   margin: 0.5em 0 0;
 }
 
-/* line 61, ../../src/styles/_post.scss */
+/* line 91, ../../src/styles/_post.scss */
 .highlight {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -403,7 +428,7 @@ pre {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 64, ../../src/styles/_post.scss */
+/* line 94, ../../src/styles/_post.scss */
 .highlight pre {
   padding: 15px;
 }
