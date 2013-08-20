@@ -11,15 +11,11 @@ block content
           | Comments
   ul.pagination.group
     - for (var i = 0; i < pages.length; i++) {
-    -   if (pages[i].currentPage) var currentIndex = i;
-    - }
-
-    - for (var j = 0; j < pages.length; j++) {
-      - var page = pages[j];
-      - if (j === currentIndex - 1) {
+      - var page = pages[i];
+      - if (i === currentIndex - 1) {
         li.newer
           a(href="#{page.url}") Newer &#8594;
-      - } else if (j === currentIndex + 1) {
+      - } else if (i === currentIndex + 1) {
         li.older
           a.active-page(href="#{page.url}") &#8592; Older
       - }
