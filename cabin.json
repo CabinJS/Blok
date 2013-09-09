@@ -1,37 +1,10 @@
 {
-  "style": [
-    "Sass"
-  ],
-  "template": [
-    "Jade"
-  ],
   "CSSPreprocessor": [
     "Sass"
   ],
   "templateEngine": [
     "Jade"
   ],
-  "gruntPagesVersion": "~0.5.0",
-  "gruntPages": {
-    "options": {
-      "pageSrc": "src/pages",
-      "data": {
-        "baseUrl": "/"
-      }
-    },
-    "posts": {
-      "src": "posts",
-      "dest": "dist",
-      "layout": "src/layouts/post.<%= templateLang %>",
-      "url": ":title/",
-      "options": {
-        "pagination": {
-          "postsPerPage": 2,
-          "listPage": "src/pages/index.<%= templateLang %>"
-        }
-      }
-    }
-  },
   "gruntPagesConfig": {
     "options": {
       "pageSrc": "src/pages",
@@ -43,7 +16,7 @@
         "src": "posts",
       "dest": "dist",
       "layout": "src/layouts/post.<%= templateEngine %>",
-      "url": ":title/",
+      "url": "posts/:title/",
       "options": {
         "pagination": {
           "postsPerPage": 2,
