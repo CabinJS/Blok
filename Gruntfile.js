@@ -2,9 +2,9 @@ module.exports = function (grunt) {
 
   var gruntPagesConfig = JSON.parse(grunt.template.process(grunt.file.read('cabin.json'), {
       data: {
-        templateLang: grunt.option('lang') || 'jade'
+        templateEngine: grunt.option('lang') || 'jade'
       }
-    })).gruntPages;
+    })).gruntPagesConfig;
 
   gruntPagesConfig.posts.options.templateEngine = grunt.option('lang') || 'jade';
 
@@ -84,13 +84,26 @@ module.exports = function (grunt) {
       }
     },
     clean: {
-      dist: 'dist'
+      dist: 'dist',
+      engine: '.engineDiff'
     },
     'gh-pages': {
       options: {
         base: 'dist'
       },
       src: ['**']
+    },
+    simplemocha: {
+      options: {
+        globals: ['should'],
+        timeout: 600000,
+        ignoreLeaks: false,
+        ui: 'bdd',
+        reporter: 'spec'
+      },
+      install: {
+        src: ['test/testThemeInstallation.js']
+      }
     }
   });
 
@@ -112,12 +125,22 @@ module.exports = function (grunt) {
     'gh-pages'
   ]);
 
-  grunt.registerTask('default', [
+  grunt.registerTask('server', [
     'build',
     'connect',
     'open',
     'watch'
   ]);
 
+  grunt.registerTask('default', ['server']);
+
+  grunt.registerTask('test', 'Test theme using node_modules in root folder rather than downloading from npm each time', function () {
+    process.env['NODE_ENV'] = 'dev';
+    grunt.task.run('testTheme');
+  });
+
+  grunt.registerTask('testTheme', ['clean', 'simplemocha']);
+
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+  require('matchdep').filter('grunt-*').forEach(grunt.loadNpmTasks);
 };
