@@ -1,4 +1,362 @@
-@import url(solarized-dark.syntax.css);
+/* line 1, ../../src/styles/_solarized-dark.scss */
+.highlight {
+  background-color: #073642;
+  color: #93a1a1;
+}
+
+/* line 6, ../../src/styles/_solarized-dark.scss */
+.highlight .c {
+  color: #586e75 !important;
+  font-style: italic !important;
+}
+
+/* line 11, ../../src/styles/_solarized-dark.scss */
+.highlight .cm {
+  color: #586e75 !important;
+  font-style: italic !important;
+}
+
+/* line 16, ../../src/styles/_solarized-dark.scss */
+.highlight .cp {
+  color: #586e75 !important;
+  font-style: italic !important;
+}
+
+/* line 21, ../../src/styles/_solarized-dark.scss */
+.highlight .c1 {
+  color: #586e75 !important;
+  font-style: italic !important;
+}
+
+/* line 26, ../../src/styles/_solarized-dark.scss */
+.highlight .cs {
+  color: #586e75 !important;
+  font-weight: bold !important;
+  font-style: italic !important;
+}
+
+/* line 32, ../../src/styles/_solarized-dark.scss */
+.highlight .err {
+  color: #dc322f !important;
+  background: none !important;
+}
+
+/* line 37, ../../src/styles/_solarized-dark.scss */
+.highlight .k {
+  color: #cb4b16 !important;
+}
+
+/* line 41, ../../src/styles/_solarized-dark.scss */
+.highlight .o {
+  color: #93a1a1 !important;
+  font-weight: bold !important;
+}
+
+/* line 46, ../../src/styles/_solarized-dark.scss */
+.highlight .p {
+  color: #93a1a1 !important;
+}
+
+/* line 50, ../../src/styles/_solarized-dark.scss */
+.highlight .ow {
+  color: #2aa198 !important;
+  font-weight: bold !important;
+}
+
+/* line 55, ../../src/styles/_solarized-dark.scss */
+.highlight .gd {
+  color: #93a1a1 !important;
+  background-color: #372c34 !important;
+  display: inline-block;
+}
+
+/* line 61, ../../src/styles/_solarized-dark.scss */
+.highlight .gd .x {
+  color: #93a1a1 !important;
+  background-color: #4d2d33 !important;
+  display: inline-block;
+}
+
+/* line 67, ../../src/styles/_solarized-dark.scss */
+.highlight .ge {
+  color: #93a1a1 !important;
+  font-style: italic !important;
+}
+
+/* line 72, ../../src/styles/_solarized-dark.scss */
+.highlight .gr {
+  color: #aa0000;
+}
+
+/* line 76, ../../src/styles/_solarized-dark.scss */
+.highlight .gh {
+  color: #586e75 !important;
+}
+
+/* line 80, ../../src/styles/_solarized-dark.scss */
+.highlight .gi {
+  color: #93a1a1 !important;
+  background-color: #1a412b !important;
+  display: inline-block;
+}
+
+/* line 86, ../../src/styles/_solarized-dark.scss */
+.highlight .gi .x {
+  color: #93a1a1 !important;
+  background-color: #355720 !important;
+  display: inline-block;
+}
+
+/* line 92, ../../src/styles/_solarized-dark.scss */
+.highlight .go {
+  color: #888888;
+}
+
+/* line 96, ../../src/styles/_solarized-dark.scss */
+.highlight .gp {
+  color: #555555;
+}
+
+/* line 100, ../../src/styles/_solarized-dark.scss */
+.highlight .gs {
+  color: #93a1a1 !important;
+  font-weight: bold !important;
+}
+
+/* line 105, ../../src/styles/_solarized-dark.scss */
+.highlight .gu {
+  color: #6c71c4 !important;
+}
+
+/* line 109, ../../src/styles/_solarized-dark.scss */
+.highlight .gt {
+  color: #aa0000;
+}
+
+/* line 113, ../../src/styles/_solarized-dark.scss */
+.highlight .kc {
+  color: #859900 !important;
+  font-weight: bold !important;
+}
+
+/* line 118, ../../src/styles/_solarized-dark.scss */
+.highlight .kd {
+  color: #268bd2 !important;
+}
+
+/* line 122, ../../src/styles/_solarized-dark.scss */
+.highlight .kp {
+  color: #cb4b16 !important;
+  font-weight: bold !important;
+}
+
+/* line 127, ../../src/styles/_solarized-dark.scss */
+.highlight .kr {
+  color: #d33682 !important;
+  font-weight: bold !important;
+}
+
+/* line 132, ../../src/styles/_solarized-dark.scss */
+.highlight .kt {
+  color: #2aa198 !important;
+}
+
+/* line 136, ../../src/styles/_solarized-dark.scss */
+.highlight .n {
+  color: #268bd2 !important;
+}
+
+/* line 140, ../../src/styles/_solarized-dark.scss */
+.highlight .na {
+  color: #268bd2 !important;
+}
+
+/* line 144, ../../src/styles/_solarized-dark.scss */
+.highlight .nb {
+  color: #859900 !important;
+}
+
+/* line 148, ../../src/styles/_solarized-dark.scss */
+.highlight .nc {
+  color: #d33682 !important;
+}
+
+/* line 152, ../../src/styles/_solarized-dark.scss */
+.highlight .no {
+  color: #b58900 !important;
+}
+
+/* line 156, ../../src/styles/_solarized-dark.scss */
+.highlight .ni {
+  color: purple;
+}
+
+/* line 160, ../../src/styles/_solarized-dark.scss */
+.highlight .nl {
+  color: #859900 !important;
+}
+
+/* line 164, ../../src/styles/_solarized-dark.scss */
+.highlight .ne {
+  color: #268bd2 !important;
+  font-weight: bold !important;
+}
+
+/* line 169, ../../src/styles/_solarized-dark.scss */
+.highlight .nf {
+  color: #268bd2 !important;
+  font-weight: bold !important;
+}
+
+/* line 174, ../../src/styles/_solarized-dark.scss */
+.highlight .nn {
+  color: #b58900 !important;
+}
+
+/* line 178, ../../src/styles/_solarized-dark.scss */
+.highlight .nt {
+  color: #268bd2 !important;
+  font-weight: bold !important;
+}
+
+/* line 183, ../../src/styles/_solarized-dark.scss */
+.highlight .nx {
+  color: #b58900 !important;
+}
+
+/* line 187, ../../src/styles/_solarized-dark.scss */
+.highlight .bp {
+  color: #999999;
+}
+
+/* line 191, ../../src/styles/_solarized-dark.scss */
+.highlight .vc {
+  color: teal;
+}
+
+/* line 195, ../../src/styles/_solarized-dark.scss */
+.highlight .vg {
+  color: #268bd2 !important;
+}
+
+/* line 199, ../../src/styles/_solarized-dark.scss */
+.highlight .vi {
+  color: #268bd2 !important;
+}
+
+/* line 203, ../../src/styles/_solarized-dark.scss */
+.highlight .nv {
+  color: #268bd2 !important;
+}
+
+/* line 207, ../../src/styles/_solarized-dark.scss */
+.highlight .w {
+  color: #bbbbbb;
+}
+
+/* line 211, ../../src/styles/_solarized-dark.scss */
+.highlight .mf {
+  color: #2aa198 !important;
+}
+
+/* line 215, ../../src/styles/_solarized-dark.scss */
+.highlight .m {
+  color: #2aa198 !important;
+}
+
+/* line 219, ../../src/styles/_solarized-dark.scss */
+.highlight .mh {
+  color: #2aa198 !important;
+}
+
+/* line 223, ../../src/styles/_solarized-dark.scss */
+.highlight .mi {
+  color: #2aa198 !important;
+}
+
+/* line 227, ../../src/styles/_solarized-dark.scss */
+.highlight .mo {
+  color: #009999;
+}
+
+/* line 231, ../../src/styles/_solarized-dark.scss */
+.highlight .s {
+  color: #2aa198 !important;
+}
+
+/* line 235, ../../src/styles/_solarized-dark.scss */
+.highlight .sb {
+  color: #dd1144;
+}
+
+/* line 239, ../../src/styles/_solarized-dark.scss */
+.highlight .sc {
+  color: #dd1144;
+}
+
+/* line 243, ../../src/styles/_solarized-dark.scss */
+.highlight .sd {
+  color: #2aa198 !important;
+}
+
+/* line 247, ../../src/styles/_solarized-dark.scss */
+.highlight .s2 {
+  color: #2aa198 !important;
+}
+
+/* line 251, ../../src/styles/_solarized-dark.scss */
+.highlight .se {
+  color: #dc322f !important;
+}
+
+/* line 255, ../../src/styles/_solarized-dark.scss */
+.highlight .sh {
+  color: #dd1144;
+}
+
+/* line 259, ../../src/styles/_solarized-dark.scss */
+.highlight .si {
+  color: #268bd2 !important;
+}
+
+/* line 263, ../../src/styles/_solarized-dark.scss */
+.highlight .sx {
+  color: #dd1144;
+}
+
+/* line 267, ../../src/styles/_solarized-dark.scss */
+.highlight .sr {
+  color: #2aa198 !important;
+}
+
+/* line 271, ../../src/styles/_solarized-dark.scss */
+.highlight .s1 {
+  color: #2aa198 !important;
+}
+
+/* line 275, ../../src/styles/_solarized-dark.scss */
+.highlight .ss {
+  color: #990073;
+}
+
+/* line 279, ../../src/styles/_solarized-dark.scss */
+.highlight .il {
+  color: #009999;
+}
+
+/* line 283, ../../src/styles/_solarized-dark.scss */
+.highlight div .gd, .highlight div .gd .x, .highlight div .gi, .highlight div .gi .x {
+  display: inline-block;
+  width: 100%;
+}
+
+/*Icon Set: IcoMoon - Free -- http://keyamoon.com/icomoon/*/
+/*License:  CC BY 3.0 -- http://creativecommons.org/licenses/by/3.0/*/
+/*
+Note: To edit icons, go to the following url: http://icomoon.io/app/
+      Then click the stacked circle icon in the bottom right and upload the BlokIcoMoonSession.json file from this folder
+      After updating the icons simply download them and copy the fonts folder along with style.css into this folder and rename style.css to _icons.scss
+*/
 @font-face {
   font-family: 'icomoon';
   src: url("fonts/icomoon.eot");
@@ -7,27 +365,14 @@
   font-style: normal;
 }
 
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-/* line 13, ../../src/styles/_icons.scss */
-[data-icon]:before {
-  font-family: 'icomoon';
-  content: attr(data-icon);
-  speak: none;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-}
-
 /* Use the following CSS code if you want to have a class per icon */
 /*
 Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-/* line 30, ../../src/styles/_icons.scss */
-.icon-bubbles, .icon-link {
+/* line 27, ../../src/styles/_icons.scss */
+.icon-pinterest, .icon-github, .icon-twitter, .icon-menu, .icon-dribbble, .icon-facebook, .icon-google-plus, .icon-bubbles {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -38,17 +383,54 @@ you can use the generic selector below, but it's slower:
   -webkit-font-smoothing: antialiased;
 }
 
+/* line 37, ../../src/styles/_icons.scss */
+.icon-pinterest:before {
+  content: "\e000";
+}
+
 /* line 40, ../../src/styles/_icons.scss */
-.icon-bubbles:before {
-  content: "\e002";
+.icon-github:before {
+  content: "\e001";
 }
 
 /* line 43, ../../src/styles/_icons.scss */
-.icon-link:before {
+.icon-twitter:before {
+  content: "\e002";
+}
+
+/* line 46, ../../src/styles/_icons.scss */
+.icon-menu:before {
   content: "\e003";
 }
 
-/* line 30, ../../src/styles/_base.scss */
+/* line 49, ../../src/styles/_icons.scss */
+.icon-dribbble:before {
+  content: "\e004";
+}
+
+/* line 52, ../../src/styles/_icons.scss */
+.icon-facebook:before {
+  content: "\e005";
+}
+
+/* line 55, ../../src/styles/_icons.scss */
+.icon-google-plus:before {
+  content: "\e006";
+}
+
+/* line 58, ../../src/styles/_icons.scss */
+.icon-bubbles:before {
+  content: "\e007";
+}
+
+/* line 31, ../../src/styles/_base.scss */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 42, ../../src/styles/_base.scss */
 body {
   margin: 0 0 33px;
   color: #393838;
@@ -58,49 +440,49 @@ body {
   font-size: 18px;
 }
 @media (max-width: 1250px) {
-  /* line 30, ../../src/styles/_base.scss */
+  /* line 42, ../../src/styles/_base.scss */
   body {
     font-size: 16px;
   }
 }
 @media (max-width: 630px) {
-  /* line 30, ../../src/styles/_base.scss */
+  /* line 42, ../../src/styles/_base.scss */
   body {
     font-size: 12px;
   }
 }
 
-/* line 48, ../../src/styles/_base.scss */
+/* line 60, ../../src/styles/_base.scss */
 abbr {
   border-bottom-width: 0;
 }
 
-/* line 52, ../../src/styles/_base.scss */
+/* line 64, ../../src/styles/_base.scss */
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 58, ../../src/styles/_base.scss */
+/* line 70, ../../src/styles/_base.scss */
 img {
   max-width: 100%;
   border-width: 0;
 }
 
-/* line 63, ../../src/styles/_base.scss */
+/* line 75, ../../src/styles/_base.scss */
 h2 {
   font-size: 1.5em;
   line-height: 1.7em;
 }
 
-/* line 68, ../../src/styles/_base.scss */
+/* line 80, ../../src/styles/_base.scss */
 a {
   color: #393838;
   text-decoration: none;
 }
 
-/* line 73, ../../src/styles/_base.scss */
+/* line 85, ../../src/styles/_base.scss */
 .content {
   position: relative;
   margin: 33px auto 0;
@@ -108,30 +490,30 @@ a {
   width: 55%;
 }
 @media (max-width: 1250px) {
-  /* line 73, ../../src/styles/_base.scss */
+  /* line 85, ../../src/styles/_base.scss */
   .content {
     width: 94%;
   }
 }
 @media (max-width: 630px) {
-  /* line 73, ../../src/styles/_base.scss */
+  /* line 85, ../../src/styles/_base.scss */
   .content {
     margin: 0 auto 10px;
     width: 100%;
   }
 }
-/* line 88, ../../src/styles/_base.scss */
+/* line 100, ../../src/styles/_base.scss */
 .content a:hover {
   text-decoration: underline;
 }
 
-/* line 93, ../../src/styles/_base.scss */
+/* line 105, ../../src/styles/_base.scss */
 .pagination {
   height: 40px;
 }
-/* line 96, ../../src/styles/_base.scss */
-.pagination li {
-  float: left;
+/* line 108, ../../src/styles/_base.scss */
+.pagination a {
+  position: absolute;
   padding: 10px;
   background: white;
   -webkit-box-shadow: 5px 5px #e6e6e6;
@@ -139,42 +521,35 @@ a {
   box-shadow: 5px 5px #e6e6e6;
 }
 
-/* line 103, ../../src/styles/_base.scss */
+/* line 115, ../../src/styles/_base.scss */
 .older {
-  position: absolute;
   left: 0;
 }
 
-/* line 108, ../../src/styles/_base.scss */
+/* line 119, ../../src/styles/_base.scss */
 .newer {
-  position: absolute;
   right: 0;
 }
 
-/* line 113, ../../src/styles/_base.scss */
+/* line 123, ../../src/styles/_base.scss */
 .cabin {
   position: fixed;
   right: .5em;
   bottom: .5em;
   width: 1.6em;
-  opacity: .2;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
 }
-/* line 120, ../../src/styles/_base.scss */
+/* line 130, ../../src/styles/_base.scss */
 .cabin:hover {
-  opacity: .4;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
 }
 @media (max-width: 1250px) {
-  /* line 113, ../../src/styles/_base.scss */
+  /* line 123, ../../src/styles/_base.scss */
   .cabin {
     display: none;
   }
-}
-
-/* line 130, ../../src/styles/_base.scss */
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* line 1, ../../src/styles/_nav.scss */
@@ -319,7 +694,7 @@ a {
 /* line 7, ../../src/styles/_post.scss */
 .post {
   padding: 1.8em 2.8em;
-  margin: 0 0 33px;
+  margin: 0 0  33px;
   background: white;
   -webkit-box-shadow: 5px 5px #e6e6e6;
   -moz-box-shadow: 5px 5px #e6e6e6;
@@ -345,9 +720,9 @@ a {
 
 /* line 25, ../../src/styles/_post.scss */
 .post-date {
-  margin: 0.2em 0;
+  margin: .2em 0;
   font-size: 1.4em;
-  color: rgba(57, 56, 56, 0.3);
+  color: #b8b7b7;
 }
 
 /* line 31, ../../src/styles/_post.scss */
@@ -367,7 +742,7 @@ a {
 
 /* line 45, ../../src/styles/_post.scss */
 .social {
-  padding: 0.55em 0 1.4em;
+  padding: .55em 0 1.4em;
 }
 
 /* line 49, ../../src/styles/_post.scss */
@@ -378,21 +753,20 @@ a {
 }
 /* line 54, ../../src/styles/_post.scss */
 .comments a {
-  color: rgba(57, 56, 56, 0.3);
+  color: #b8b7b7;
 }
 /* line 57, ../../src/styles/_post.scss */
 .comments a:hover {
   text-decoration: none;
   color: #4d91d5;
-  opacity: 1;
 }
-/* line 64, ../../src/styles/_post.scss */
+/* line 63, ../../src/styles/_post.scss */
 .comments .icon-bubbles {
   padding: 3px 15px 5px 0;
   float: left;
 }
 
-/* line 70, ../../src/styles/_post.scss */
+/* line 69, ../../src/styles/_post.scss */
 p code {
   background: #ebebff;
   border: 1px solid #e6e6e6;
@@ -404,7 +778,7 @@ p code {
   border-radius: 3px;
 }
 
-/* line 77, ../../src/styles/_post.scss */
+/* line 76, ../../src/styles/_post.scss */
 code {
   margin: 0;
   padding: 0;
@@ -413,14 +787,14 @@ code {
   font-family: Monaco, Consolas, monospace;
 }
 
-/* line 85, ../../src/styles/_post.scss */
+/* line 84, ../../src/styles/_post.scss */
 pre {
   font-family: Monaco, Consolas, monospace;
   overflow: auto;
-  margin: 0.5em 0 0;
+  margin: .5em 0 0;
 }
 
-/* line 91, ../../src/styles/_post.scss */
+/* line 90, ../../src/styles/_post.scss */
 .highlight {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -428,7 +802,7 @@ pre {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 94, ../../src/styles/_post.scss */
+/* line 93, ../../src/styles/_post.scss */
 .highlight pre {
   padding: 15px;
 }
