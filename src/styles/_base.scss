@@ -93,20 +93,18 @@ a {
 .pagination {
   height: 40px;
 
-  li {
-    float: left;
+  a {
+    position: absolute;
     padding: 10px;
     @include shadow(hsl(0, 0%, 100%));
   }
 }
 
 .older {
-  position: absolute;
   left: 0;
 }
 
 .newer {
-  position: absolute;
   right: 0;
 }
 
