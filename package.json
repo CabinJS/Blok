@@ -18,7 +18,8 @@
     "grunt-gh-pages": "~0.7.0",
     "should": "~1.2.2",
     "grunt-simple-mocha": "~0.4.0",
-    "wrench": "~1.5.1"
+    "wrench": "~1.5.1",
+    "html-diff": "~0.0.3"
   },
   "scripts": {
     "test": "grunt testTheme"
