@@ -1,39 +1,44 @@
-// Social sharing icons
+<!--Social sharing icons-->
 
-.social
-  a(href="https://twitter.com/share", class="twitter-share-button") Tweet
-  .g-plusone(data-size="medium", data-annotation="bubble", data-width="300")
-  a(href="http://news.ycombinator.com/submit", class="hn-share-button") Vote on HN
+<div class="social">
+  <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+  <div data-size="medium" data-annotation="bubble" data-width="300" class="g-plusone"></div>
+  <a href="http://news.ycombinator.com/submit" class="hn-share-button">Vote on HN</a>
+</div>
 
-// Disqus comments, Make sure to replace `colinwren` with your account name in
-// the Disqus helper script below
-#comments
-  #disqus_thread
+<!--Disqus comments, Make sure to replace `colinwren` with your account name in-->
+<!--the Disqus helper script below-->
+<div id="comments">
+  <div id="disqus_thread"></div>
+</div>
 
-// Helper scripts for social share icons
-// Hacker News
-script.
+<!--Helper scripts for social share icons-->
+<!--Hacker News-->
+<script>
   (function(d, t) {
     var g = d.createElement(t),
         s = d.getElementsByTagName(t)[0];
     g.src = '//hnbutton.appspot.com/static/hn.min.js';
     s.parentNode.insertBefore(g, s);
   }(document, 'script'));
+</script>
 
-// Twitter
-script.
+<!--Twitter-->
+<script>
   !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
 
-// Google plus
-script.
+<!--Google plus-->
+<script>
   (function() {
     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
     po.src = 'https://apis.google.com/js/plusone.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
   })();
+</script>
 
-// Disqus
-script.
+<!--Disqus-->
+<script>
   var disqus_shortname = 'colinwren'; // Change this to your Disqus account name
 
   (function() {
@@ -41,3 +46,4 @@ script.
       dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
+</script>

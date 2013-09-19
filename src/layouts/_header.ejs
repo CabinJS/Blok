@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8">
+    <base href="<%= data.baseUrl %>">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="images/cabin.png">
+    <link href="styles/main.css" rel="stylesheet">
+    <% if (locals.title) { %>
+    <title><%= locals.title %></title>
+    <% } else { %>
+    <title>My Blog</title>
+    <% } %>
+    <% if (locals.description) { %>
+    <meta name="description" content="<%= locals.description %>">
+    <% locals.description = null; %>
+    <% } %>
+  </head>
+  <body>
+    <ul class="nav group">
+      <li class="icon-menu menu"></li>
+      <li class="nav-link red<%= current === 'index' ? ' active' : '' %>">
+        <a href="" class="name">My Name</a>
+      </li>
+      <li class="nav-link blue<%= current === 'about' ? ' active' : '' %>">
+        <a href="about.html">about</a>
+      </li>
+      <li class="nav-link orange<%= current === 'projects' ? ' active' : '' %>">
+        <a href="projects.html">projects</a>
+      </li>
+      <li class="nav-link green<%= current === 'archives' ? ' active' : '' %>">
+        <a href="archives.html">archives</a>
+      </li>
+    </ul>
+    <div class="content">

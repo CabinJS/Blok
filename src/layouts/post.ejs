@@ -1,0 +1,11 @@
+<% locals.current = null %>
+<% locals.title = post.title %>
+<% if ( post.description != null ) { %>
+  <% locals.description = post.description; %>
+<% } %>
+<% include _header %>
+<div class="post">
+<% include _post %>
+<% include _social%>
+</div>
+<% include _footer %>

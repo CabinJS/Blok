@@ -1,4 +1,3 @@
-//- Mixin for post, used on homepage and post page
 mixin postHead(post)
   .post-head.group
     a(href="#{post.url}")
@@ -15,11 +14,11 @@ mixin nav(current)
     li.icon-menu.menu
     li.nav-link.red(class= current === "index" ? "active" : "")
       a.name(href="") My Name
-    li.nav-link.sub-item.blue(class= current === "about" ? "active" : "")
+    li.nav-link.blue(class= current === "about" ? "active" : "")
       a(href="about.html") about
-    li.nav-link.sub-item.orange(class= current === "projects" ? "active" : "")
+    li.nav-link.orange(class= current === "projects" ? "active" : "")
       a(href="projects.html") projects
-    li.nav-link.sub-item.green(class= current === "archives" ? "active" : "")
+    li.nav-link.green(class= current === "archives" ? "active" : "")
       a(href="archives.html") archives
 
 doctype 5
