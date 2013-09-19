@@ -2,22 +2,23 @@
 <html>
   <head>
     <meta charset="utf8">
+    <base href="/Blok/">
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" type="image/png" href="/Blok/images/cabin.png">
-    <link href="/Blok/styles/main.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/cabin.png">
+    <link href="styles/main.css" rel="stylesheet">
     <title>Blok Theme</title>
   </head>
   <body>
     <ul class="nav group">
       <li class="icon-menu menu"></li>
-      <li class="nav-link red"><a href="/Blok/" class="name">My Name</a></li>
-      <li class="nav-link sub-item blue"><a href="/Blok/about.html">about</a></li>
-      <li class="nav-link sub-item orange"><a href="/Blok/projects.html">projects</a></li>
-      <li class="nav-link sub-item green"><a href="/Blok/archives.html">archives</a></li>
+      <li class="nav-link red"><a href="" class="name">My Name</a></li>
+      <li class="nav-link blue"><a href="about.html">about</a></li>
+      <li class="nav-link orange"><a href="projects.html">projects</a></li>
+      <li class="nav-link green"><a href="archives.html">archives</a></li>
     </ul>
     <div class="content">
       <div class="post">
-        <div class="post-head group"><a href="/Blok/posts/blok-theme/">
+        <div class="post-head group"><a href="posts/blok-theme/">
             <h1 class="post-title">Blok Theme</h1></a>
           <h2 class="post-date">Published <abbr title="2013-07-02T00:00:00.000Z" class="timeago"></abbr></h2>
         </div>
@@ -36,12 +37,17 @@
 <a name="linked-headers" class="anchor" href="#linked-headers"><h3>Linked headers</h3>
 </a><p>Coming soon!</p>
 </div>
+        <!-- Social sharing icons-->
         <div class="social"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
           <div data-size="medium" data-annotation="bubble" data-width="300" class="g-plusone"></div><a href="http://news.ycombinator.com/submit" class="hn-share-button">Vote on HN</a>
         </div>
+        <!-- Disqus comments, Make sure to replace `colinwren` with your account name in-->
+        <!-- the Disqus helper script below-->
         <div id="comments">
           <div id="disqus_thread"></div>
         </div>
+        <!-- Helper scripts for social share icons-->
+        <!-- Hacker News-->
         <script>
           (function(d, t) {
             var g = d.createElement(t),
@@ -51,10 +57,12 @@
           }(document, 'script'));
           
         </script>
+        <!-- Twitter-->
         <script>
           !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
           
         </script>
+        <!-- Google plus-->
         <script>
           (function() {
             var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
@@ -63,6 +71,7 @@
           })();
           
         </script>
+        <!-- Disqus-->
         <script>
           var disqus_shortname = 'colinwren'; // Change this to your Disqus account name
           
@@ -73,9 +82,9 @@
           })();
         </script>
       </div>
-    </div><a href="http://colinwren.github.io/Cabin/"><img src="/Blok/images/cabin.png" class="cabin"></a>
+    </div><a href="http://colinwren.github.io/Cabin/"><img src="images/cabin.png" class="cabin"></a>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js" type="text/javascript"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.1.0/jquery.timeago.min.js" type="text/javascript"></script>
-    <script src="/Blok/scripts/main.js" type="text/javascript"></script>
+    <script src="scripts/main.js" type="text/javascript"></script>
   </body>
 </html>
