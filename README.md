@@ -1,6 +1,8 @@
 # Blok
 > Blogging theme for [Cabin](https://github.com/colinwren/Cabin)
 
+[![Dependency Status](https://gemnasium.com/CabinJS/Blok.png)](https://gemnasium.com/CabinJS/Blok) [![Travis Status](https://travis-ci.org/CabinJS/Blok.png?branch=master)](https://travis-ci.org/CabinJS/Blok)
+
 Visit the Cabin [homepage](http://www.cabinjs.com/#getting-started) to get started blogging with this theme.
 
 ## License
