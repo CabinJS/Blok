@@ -3,7 +3,39 @@
 
 [![Dependency Status](https://gemnasium.com/CabinJS/Blok.png)](https://gemnasium.com/CabinJS/Blok) [![Travis Status](https://travis-ci.org/CabinJS/Blok.png?branch=master)](https://travis-ci.org/CabinJS/Blok)
 
-Visit the Cabin [homepage](http://www.cabinjs.com/#getting-started) to get started blogging with this theme.
+[![Blok Theme](http://i.imgur.com/JKM27ib.png?1)](http://cabinjs.github.io/Blok/)
+
+## Using Blok
+
+To use Blok, go to the [GitHub page](http://cabinjs.github.io/Blok/).
+
+## Contributing to Blok
+
+### Theme Philosopy
+
+Blok is a minimalist blogging theme. Its goal is to provide a clean interface for consuming blog posts and interacting with stand alone pages(about/projects). It is fully responsive, and aims to be a great experience on all devices.
+
+#### Tests
+
+Blok uses Travis CI to make sure the theme installs correctly using the Cabin version listed in the package.json's dependencies, and that the html output is the same for both the Jade and EJS template engines. To run the tests, run `grunt test` in your terminal.
+
+If the installation test fails, try installing the theme manually with the `--local` flag. If the template engine output test fails, read the [testing engine output](#testing-engine-output) section below.
+
+### Template Engine Support
+
+Blok supports both the Jade and EJS template engines. As such, when contributing to Blok, make sure to make template changes in both engines. We have a grunt task, `engineDiff` which will build a site using both engines and print any differences the engine's html output.
+
+#### Testing engine output
+
+The best workflow is to work on your preferred template engine and then make the other one match by running `engineDiff`. The `engineDiff` task diffs the engine output, and then watches the template files for changes to re-compare, so you can just edit templates and keep comparing until the html output diff is empty.
+
+#### Updating Icons
+
+Blok uses the [IcoMoon App](http://icomoon.io/app/) to generate icon fonts. To alter the icons, go to [this](http://icomoon.io/app/) url, and click the below session icon in the bottom right and upload the `src/styles/IcoMoon Session.json` file.
+
+<img src="http://i.imgur.com/7fmXyfF.png">
+
+After updating the icons simply download them and replace the `fonts` folder inside the `src/styles` folder and replace the contents of `src/styles/_icon.scss` with `style.css`. You will also need to update the `src/styles/IcoMoon Session.json` by clicking `Store Session` after clicking the session icon to allow for future icon changes.
 
 ## License
 
