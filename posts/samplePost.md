@@ -1,7 +1,7 @@
-----
-title: My cool blog post
-date:   2013-06-3
-----
+{
+  title: "My cool blog post",
+  date:  "2013-6-3"
+}
 Some [Cupake Ipsum](http://cupcakeipsum.com) to brighten your day!
 
 Wafer donut jelly-o chocolate bar apple pie sesame snaps jelly beans cupcake.
