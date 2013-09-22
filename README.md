@@ -3,7 +3,7 @@
 
 [![Dependency Status](https://gemnasium.com/CabinJS/Blok.png)](https://gemnasium.com/CabinJS/Blok) [![Travis Status](https://travis-ci.org/CabinJS/Blok.png?branch=master)](https://travis-ci.org/CabinJS/Blok)
 
-[![Blok Theme](http://i.imgur.com/JKM27ib.png?1)](http://cabinjs.github.io/Blok/)
+[![Blok Theme](http://i.imgur.com/CgppgNp.png)](http://cabinjs.github.io/Blok/)
 
 ## Using Blok
 
