@@ -2,7 +2,7 @@ mixin postHead(post)
   .post-head.group
     a(href="#{data.baseUrl}#{post.url}")
       h1.post-title= post.title
-    h2.post-date Published 
+    h2.post-date Published
       abbr.timeago(title="#{post.date.toISOString()}")
 
 mixin post(post)
@@ -35,7 +35,7 @@ html
 
     .content
       block content
-    a(href="http://colinwren.github.io/Cabin/")
+    a(href="http://cabinjs.com")
       img.cabin(src="#{data.baseUrl}images/cabin.png")
 
     script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js", type="text/javascript")
