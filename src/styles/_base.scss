@@ -27,20 +27,14 @@ $linkColor: $blueGrey;
   @include box-shadow( 5px 5px desaturate(darken($color, 10), 20));
 }
 
-@mixin clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-.group {
-  @include clearfix;
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 body {
-  margin: 0 0 33px;
+  margin: 0;
   color: $baseTextColor;
   background: hsl(0, 0%, 94%);
   -webkit-font-smoothing: antialiased;
@@ -84,7 +78,7 @@ a {
 
 .content {
   position: relative;
-  margin: 33px auto 0;
+  margin: 33px auto;
   max-width: 700px;
   width: 55%;
 

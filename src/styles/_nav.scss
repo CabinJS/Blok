@@ -8,33 +8,14 @@
   a {
     padding: 14px;
     display: block;
-  }
-
-  li {
-    margin: 0;
-    @include transition( all 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000));
-
-    @include breakpoint(big-phone) {
-      @include transition( all 400ms cubic-bezier(0.420, 0.000, 0.580, 1.000));
-    }
-  }
-
-  .active {
-    margin-left: -45px;
-
-    &:hover {
-      margin-left: -45px;
-    }
-  }
-
-  a {
     color: white;
     text-decoration: none;
     font-weight: bold;
   }
 }
 
-.nav .nav-link {
+.nav-link {
+  margin: 0;
   position: relative;
   z-index: 90;
   width: 245px;
@@ -48,15 +29,28 @@
     @include transition(none);
     margin-left: 180px;
 
-    &.nav-show{
+    &.nav-show {
       margin-left: 35px;
-
-      &.active {
-        margin-left: 0px;
-      }
     }
   }
 }
+
+.active {
+  margin-left: -45px;
+
+  &:hover {
+    margin-left: -45px;
+  }
+
+  @include breakpoint(big-phone) {
+    margin-left: 180px;
+
+    &.nav-show {
+      margin-left: 0px;
+    }
+  }
+}
+
 
 .menu {
   width: 140px;
