@@ -2,7 +2,7 @@ mixin postHead(post)
   .post-head.group
     a(href="#{data.baseUrl}#{post.url}")
       h1.post-title= post.title
-    h2.post-date Published 
+    h2.post-date Published
       abbr.timeago(title="#{post.date.toISOString()}")
 
 mixin post(post)
@@ -41,3 +41,5 @@ html
     script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js", type="text/javascript")
     script(src="//cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.1.0/jquery.timeago.min.js", type="text/javascript")
     script(src="#{data.baseUrl}scripts/main.js", type="text/javascript")
+    script.
+      // Add your analytics code here
