@@ -825,10 +825,11 @@ code {
 pre {
   font-family: Monaco, Consolas, monospace;
   overflow: auto;
-  margin: .5em 0 0;
+  margin-top: 0em;
+  margin-bottom: -1.5em;
 }
 
-/* line 113, ../../src/styles/_post.scss */
+/* line 114, ../../src/styles/_post.scss */
 .highlight {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -836,7 +837,8 @@ pre {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 116, ../../src/styles/_post.scss */
+/* line 117, ../../src/styles/_post.scss */
 .highlight pre {
   padding: 15px;
+  margin-bottom: 0;
 }
