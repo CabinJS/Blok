@@ -4,12 +4,15 @@ $(function() {
 
   $('abbr.timeago').timeago();
 
-  $('.menu').on('touchstart', function(event) {
+  // If touchscreen listen for touch, if not listen for click
+  var hitEvent = 'ontouchstart' in document.documentElement ? 'touchstart' : 'click';
+
+  $('.menu').on(hitEvent, function(event) {
     event.preventDefault();
     $('.nav-link').addClass('nav-show');
   });
 
-  $('.content').on('touchstart', function() {
+  $('.content').on(hitEvent, function() {
     $('.nav-link').removeClass('nav-show');
   });
 });
