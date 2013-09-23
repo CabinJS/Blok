@@ -450,11 +450,6 @@ you can use the generic selector below, but it's slower:
 }
 
 /* line 36, ../../src/styles/_base.scss */
-html {
-  position: relative;
-}
-
-/* line 40, ../../src/styles/_base.scss */
 body {
   margin: 0;
   color: #393838;
@@ -464,49 +459,49 @@ body {
   font-size: 18px;
 }
 @media (max-width: 1250px) {
-  /* line 40, ../../src/styles/_base.scss */
+  /* line 36, ../../src/styles/_base.scss */
   body {
     font-size: 16px;
   }
 }
 @media (max-width: 630px) {
-  /* line 40, ../../src/styles/_base.scss */
+  /* line 36, ../../src/styles/_base.scss */
   body {
     font-size: 12px;
   }
 }
 
-/* line 58, ../../src/styles/_base.scss */
+/* line 54, ../../src/styles/_base.scss */
 abbr {
   border-bottom-width: 0;
 }
 
-/* line 62, ../../src/styles/_base.scss */
+/* line 58, ../../src/styles/_base.scss */
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 68, ../../src/styles/_base.scss */
+/* line 64, ../../src/styles/_base.scss */
 img {
   max-width: 100%;
   border-width: 0;
 }
 
-/* line 73, ../../src/styles/_base.scss */
+/* line 69, ../../src/styles/_base.scss */
 h2 {
   font-size: 1.5em;
   line-height: 1.7em;
 }
 
-/* line 78, ../../src/styles/_base.scss */
+/* line 74, ../../src/styles/_base.scss */
 a {
   color: #393838;
   text-decoration: none;
 }
 
-/* line 83, ../../src/styles/_base.scss */
+/* line 79, ../../src/styles/_base.scss */
 .content {
   position: relative;
   margin: 33px auto;
@@ -514,28 +509,28 @@ a {
   width: 55%;
 }
 @media (max-width: 1250px) {
-  /* line 83, ../../src/styles/_base.scss */
+  /* line 79, ../../src/styles/_base.scss */
   .content {
     width: 94%;
   }
 }
 @media (max-width: 630px) {
-  /* line 83, ../../src/styles/_base.scss */
+  /* line 79, ../../src/styles/_base.scss */
   .content {
     margin: 0 auto 10px;
     width: 100%;
   }
 }
-/* line 98, ../../src/styles/_base.scss */
+/* line 94, ../../src/styles/_base.scss */
 .content a:hover {
   text-decoration: underline;
 }
 
-/* line 103, ../../src/styles/_base.scss */
+/* line 99, ../../src/styles/_base.scss */
 .pagination {
   height: 40px;
 }
-/* line 106, ../../src/styles/_base.scss */
+/* line 102, ../../src/styles/_base.scss */
 .pagination a {
   padding: 10px;
   background: white;
@@ -544,32 +539,32 @@ a {
   box-shadow: 5px 5px #e6e6e6;
 }
 
-/* line 112, ../../src/styles/_base.scss */
+/* line 108, ../../src/styles/_base.scss */
 .older {
   float: left;
 }
 
-/* line 116, ../../src/styles/_base.scss */
+/* line 112, ../../src/styles/_base.scss */
 .newer {
   float: right;
 }
 
-/* line 120, ../../src/styles/_base.scss */
+/* line 116, ../../src/styles/_base.scss */
 .cabin {
-  position: absolute;
+  position: fixed;
   right: 0.5em;
   bottom: 0.2em;
   width: 1.8em;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-  opacity: 0.4;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
 }
-/* line 127, ../../src/styles/_base.scss */
+/* line 123, ../../src/styles/_base.scss */
 .cabin:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
 @media (max-width: 1250px) {
-  /* line 120, ../../src/styles/_base.scss */
+  /* line 116, ../../src/styles/_base.scss */
   .cabin {
     display: none;
   }
