@@ -33,6 +33,10 @@ $linkColor: $blueGrey;
   clear: both;
 }
 
+html {
+  position: relative;
+}
+
 body {
   margin: 0;
   color: $baseTextColor;
@@ -115,14 +119,14 @@ a {
 }
 
 .cabin {
-  position: fixed;
-  right: .5em;
-  bottom: .5em;
-  width: 1.6em;
-  @include opacity(.2);
+  position: absolute;
+  right: 0.5em;
+  bottom: 0.2em;
+  width: 1.8em;
+  @include opacity(.4);
 
   &:hover {
-    @include opacity(.4);
+    @include opacity(.6);
   }
 
   @include breakpoint(big-phone) {
