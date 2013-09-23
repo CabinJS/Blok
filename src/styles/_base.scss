@@ -104,18 +104,17 @@ a {
   height: 40px;
 
   a {
-    position: absolute;
     padding: 10px;
     @include shadow(hsl(0, 0%, 100%));
   }
 }
 
 .older {
-  left: 0;
+  float: left
 }
 
 .newer {
-  right: 0;
+  float: right;
 }
 
 .cabin {
