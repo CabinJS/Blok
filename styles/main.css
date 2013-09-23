@@ -638,8 +638,8 @@ a {
 
 /* line 55, ../../src/styles/_nav.scss */
 .menu {
-  width: 140px;
-  padding: 10px;
+  width: 124px;
+  padding: 5px;
   display: none;
   position: absolute;
   right: 0;
