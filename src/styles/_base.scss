@@ -33,10 +33,6 @@ $linkColor: $blueGrey;
   clear: both;
 }
 
-html {
-  position: relative;
-}
-
 body {
   margin: 0;
   color: $baseTextColor;
@@ -118,11 +114,11 @@ a {
 }
 
 .cabin {
-  position: absolute;
+  position: fixed;
   right: 0.5em;
   bottom: 0.2em;
   width: 1.8em;
-  @include opacity(.4);
+  @include opacity(.2);
 
   &:hover {
     @include opacity(.6);
