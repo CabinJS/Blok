@@ -51,7 +51,7 @@ body {
 }
 
 // Remove FF abbr border
-abbr {
+abbr[title] {
   border-bottom-width: 0;
 }
 
