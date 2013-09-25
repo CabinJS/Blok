@@ -1,4 +1,4 @@
-/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -1044,7 +1044,7 @@ a {
 
 /* line 55, ../../src/styles/_nav.scss */
 .menu {
-  width: 124px;
+  width: 135px;
   padding: 5px;
   display: none;
   position: absolute;
@@ -1062,8 +1062,14 @@ a {
     display: block;
   }
 }
+@media (max-width: 630px) {
+  /* line 55, ../../src/styles/_nav.scss */
+  .menu {
+    width: 124px;
+  }
+}
 
-/* line 70, ../../src/styles/_nav.scss */
+/* line 74, ../../src/styles/_nav.scss */
 .red {
   background: #ff6b77;
   -webkit-box-shadow: 5px 5px #eb4c59;
@@ -1071,7 +1077,7 @@ a {
   box-shadow: 5px 5px #eb4c59;
 }
 
-/* line 71, ../../src/styles/_nav.scss */
+/* line 75, ../../src/styles/_nav.scss */
 .green {
   background: #1fdb99;
   -webkit-box-shadow: 5px 5px #2d9a74;
@@ -1079,7 +1085,7 @@ a {
   box-shadow: 5px 5px #2d9a74;
 }
 
-/* line 72, ../../src/styles/_nav.scss */
+/* line 76, ../../src/styles/_nav.scss */
 .blue {
   background: #6ba6ff;
   -webkit-box-shadow: 5px 5px #4c8ceb;
@@ -1087,7 +1093,7 @@ a {
   box-shadow: 5px 5px #4c8ceb;
 }
 
-/* line 73, ../../src/styles/_nav.scss */
+/* line 77, ../../src/styles/_nav.scss */
 .orange {
   background: #ffa600;
   -webkit-box-shadow: 5px 5px #b87e14;
@@ -1095,7 +1101,7 @@ a {
   box-shadow: 5px 5px #b87e14;
 }
 
-/* line 75, ../../src/styles/_nav.scss */
+/* line 79, ../../src/styles/_nav.scss */
 .name {
   font-weight: normal;
   font-size: 1.2em;
