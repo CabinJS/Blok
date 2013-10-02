@@ -22,9 +22,18 @@ $linkColor: $blueGrey;
   }
 }
 
+
 @mixin shadow($color) {
   background: $color;
-  @include box-shadow( 5px 5px desaturate(darken($color, 10), 20));
+
+  $shadowColor: desaturate(darken($color, 10), 20);
+  @include box-shadow(
+    5px 5px $shadowColor,
+    4px 4px $shadowColor,
+    3px 3px $shadowColor,
+    2px 2px $shadowColor,
+    1px 1px $shadowColor
+  );
 }
 
 .group:after {
