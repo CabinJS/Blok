@@ -120,7 +120,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', function(target) {
     if (target === 'GHPages') {
-      gruntPagesConfig.options.data.baseUrl = '/Blok/';
+      gruntPagesConfig.posts.options.data.baseUrl = '/Blok/';
     }
 
     grunt.task.run([
