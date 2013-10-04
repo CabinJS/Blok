@@ -52,7 +52,6 @@ code {
   padding: 0 0.23em;
   @include border-radius(3px);
   margin: 0;
-  padding: 0;
   font-size: .8em;
   line-height: 1.5em;
   font-family: $codeFont;
@@ -71,6 +70,7 @@ code {
 
   code {
     border: 0;
+    padding: 0;
   }
 }
 
