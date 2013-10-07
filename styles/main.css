@@ -1005,27 +1005,33 @@ a {
 .markdown h4:hover .header-link, .markdown h5:hover .header-link, .markdown h6:hover .header-link {
   visibility: visible;
 }
+/* line 34, ../../src/styles/_markdown.scss */
+.markdown blockquote {
+  border-left: 6px solid gainsboro;
+  margin-left: 0;
+  padding-left: 1em;
+}
 
-/* line 35, ../../src/styles/_markdown.scss */
+/* line 41, ../../src/styles/_markdown.scss */
 .header-link {
   margin-left: -1.7em;
   visibility: hidden;
   font-size: 16px;
 }
 @media (max-width: 1250px) {
-  /* line 35, ../../src/styles/_markdown.scss */
+  /* line 41, ../../src/styles/_markdown.scss */
   .header-link {
     font-size: 14px;
   }
 }
 @media (max-width: 630px) {
-  /* line 35, ../../src/styles/_markdown.scss */
+  /* line 41, ../../src/styles/_markdown.scss */
   .header-link {
     font-size: 12px;
   }
 }
 
-/* line 49, ../../src/styles/_markdown.scss */
+/* line 55, ../../src/styles/_markdown.scss */
 code {
   background: #ebebff;
   border: 1px solid #e6e6e6;
@@ -1041,24 +1047,24 @@ code {
   font-family: Monaco, Consolas, monospace;
 }
 
-/* line 60, ../../src/styles/_markdown.scss */
+/* line 66, ../../src/styles/_markdown.scss */
 .markdown > pre {
   white-space: normal;
   font-family: Monaco, Consolas, monospace;
   overflow: auto;
   margin: 1em 0;
 }
-/* line 66, ../../src/styles/_markdown.scss */
+/* line 72, ../../src/styles/_markdown.scss */
 .markdown > pre pre {
   margin: 0;
 }
-/* line 71, ../../src/styles/_markdown.scss */
+/* line 77, ../../src/styles/_markdown.scss */
 .markdown > pre code {
   border: 0;
   padding: 0;
 }
 
-/* line 77, ../../src/styles/_markdown.scss */
+/* line 83, ../../src/styles/_markdown.scss */
 .highlight {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1066,7 +1072,7 @@ code {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 80, ../../src/styles/_markdown.scss */
+/* line 86, ../../src/styles/_markdown.scss */
 .highlight pre {
   padding: 15px;
   margin-bottom: 0;
