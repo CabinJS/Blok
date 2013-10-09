@@ -1,6 +1,6 @@
 {
   title: "Blok Theme",
-  date:  "2013-7-2"
+  date:  "2013-10-2"
 }
 
 Blok is a blogging theme for [Cabin](http://cabinjs.com).
