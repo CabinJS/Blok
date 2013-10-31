@@ -91,13 +91,9 @@ jQuery is used to toggle the touch optimized menu in [`src/scripts/main.js`](htt
 
 #### IcoMoon
 
-Blok uses the [IcoMoon App](http://icomoon.io/app/) to generate icon fonts. By default it uses icons for social media and comments, but you can easily add and remove icons.
+Blok uses the [IcoMoon App](http://icomoon.io/app/) to generate icon fonts. To alter the icons, go to [this](http://icomoon.io/app/) url, and click `Import Icons` in the top left and upload the `src/styles/selection.json` file.
 
-To alter the icons, go to [this](http://icomoon.io/app/) url, and click the below session icon in the bottom right and upload the `src/styles/IcoMoon Session.json` file.
-
-<img src="http://i.imgur.com/7fmXyfF.png">
-
-After updating the icons simply download them and replace the `fonts` folder inside the `src/styles` folder and replace the contents of `src/styles/_icon.scss` with `style.css`. You will also need to update the `src/styles/IcoMoon Session.json` by clicking `Store Session` after clicking the session icon to allow for future icon changes.
+After updating the icons simply download them and replace the `fonts` folder inside the `src/styles` folder, replace the `src/styles/selection.json` with the new `selection.json` and replace the contents of `src/styles/_icon.scss` with `style.css`.
 
 ## RSS
 
